@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Spare Management</title>
+  <link rel="stylesheet" href="css/insurance.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Insurance Spare Management</h1>
+  </header>
+
+  <main class="content">
+    <section class="is-table-section">
+      <div class="header-row">
+        <button class="department-button save-button" onclick="saveTableData()">Save Data</button>
+        <h2>Spare Parts Information</h2>
+        <div class="button-group">
+          <button class="department-button" onclick="filterByDepartment('MOL')">MOL</button>
+          <button class="department-button" onclick="filterByDepartment('MPE')">MPE</button>
+          <button class="department-button" onclick="filterByDepartment('MPP')">MPP</button>
+          <button class="department-button" onclick="filterByDepartment('MSI')">MSI</button>
+          <button class="department-button" onclick="filterByDepartment('MSP')">MSP</button>
+          <button class="department-button" onclick="filterByDepartment('ALL')">All</button>
+        </div>
+      </div>
+      <table id="is-table">
+        <thead>
+          <tr>
+            <th>Line Number</th>
+            <th>Material Number</th>
+            <th>Description</th>
+            <th>Stock</th>
+            <th><button class="toggle-button" onclick="toggleZeroStockFilter()">Zero Stock</button></th>
+            <th>Department</th>
+            <th>Note</th>
+            <th>Estimated Cost (MUSD)</th>
+            <th>2025</th>
+            <th>2026</th>
+            <th>2027</th>
+            <th>2028</th>
+            <th>2029</th>
+            <th>2030</th>
+            <th>2031</th>
+            <th>2032</th>
+            <th>2033</th>
+            <th>2034</th>
+            <th>2035</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>150000000000</td>
+            <td>FLOAT:MGNTC LG;TI;54X230MM;20002244</td>
+            <td>2</td>
+            <td>Available</td>
+            <td>MOL</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>150000000002</td>
+            <td>GASKET:RBR;20023655;TTS3J2NK250230;LTH90</td>
+            <td>1</td>
+            <td>Available</td>
+            <td>MOL</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>150000000004</td>
+            <td>DISPLAY</td>
+            <td>1</td>
+            <td>Available</td>
+            <td>MPE</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>150000000006</td>
+            <td>GASKET:20023655;TTS3J220022515A;LTH90</td>
+            <td>0</td>
+            <td>Zero Stock</td>
+            <td>MPP</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>150000000008</td>
+            <td>GAUGE,LVL,FLIP-MGNTC,1828MM</td>
+            <td>1</td>
+            <td>Available</td>
+            <td>MSI</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>150000000010</td>
+            <td>BEARING:20023655;TTS211052140;LTH90</td>
+            <td>2</td>
+            <td>Available</td>
+            <td>MSP</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>150000000012</td>
+            <td>FLOAT:MGNTC LG;SS321;47X220MM;20002244</td>
+            <td>0</td>
+            <td>Zero Stock</td>
+            <td>MSI</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>150000000014</td>
+            <td>BEARING:20023655;TTS211052240;LTH90</td>
+            <td>1</td>
+            <td>Available</td>
+            <td>MPP</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>150000000016</td>
+            <td>SET:GSKT;SOFT IRON;3;20010687;GK53</td>
+            <td>1</td>
+            <td>Available</td>
+            <td>MPE</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>150000000018</td>
+            <td>SENSOR:20023655;TTS211066640;LTH90</td>
+            <td>2</td>
+            <td>Available</td>
+            <td>MSI</td>
+            <td><input type="text" value="" class="input-note"></td>
+            <td><input type="number" step="0.01" value="" class="input-cost"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+            <td><input type="checkbox" class="checkbox-year"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2025 Insurance Spare Management</p>
+  </footer>
+
+  <script src="js/insurance.js"></script>
+</body>
+</html>

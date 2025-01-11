@@ -1,0 +1,160 @@
+/* General Table Styling */
+.pr-table-section {
+  padding: 1rem;
+}
+
+#pr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.875rem; /* Reduced font size */
+}
+
+#pr-table th, #pr-table td {
+  border: 1px solid #d8d8d8;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#pr-table th {
+  background-color: #f3f4f5;
+  font-weight: bold;
+  color: #32363a;
+}
+
+.line-number-column {
+  width: 5%;
+}
+
+.pr-number-column {
+  width: 15%;
+}
+
+.status-column {
+  width: 15%;
+}
+
+.pct-column {
+  width: 8%;
+}
+
+.detail-column {
+  width: 10%;
+}
+
+.note-column {
+  width: 20%;
+}
+
+.email-column {
+  width: 12%;
+}
+
+.delete-column {
+  width: 10%;
+}
+
+/* Input Fields */
+.pr-input, .note-input, .pct-input {
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 0.85rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+}
+
+.pr-input:focus, .note-input:focus, .pct-input:focus {
+  border-color: #0a6ed1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Status Indicator Styling */
+.status-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.status-indicator .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+  position: relative;
+}
+
+.status-indicator .circle:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Buttons */
+.detail-button, .email-button, .delete-row-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: white;
+  background-color: #0a6ed1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.detail-button:hover, .email-button:hover, .delete-row-button:hover {
+  background-color: #085ab5;
+}
+
+/* Action Buttons */
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.action-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.85rem;
+  color: white;
+  background-color: #0a6ed1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #085ab5;
+}
+
+/* App Footer */
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f3f4f5;
+  font-size: 0.875rem;
+  color: #6a6d70;
+}
+
+.pct-column {
+  width: 8%;
+  text-align: center;
+}
+
+.pct-label {
+  display: block;
+  font-size: 0.875rem; /* Reduced font size */
+  font-weight: normal;
+  color: #32363a;
+}

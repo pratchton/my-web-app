@@ -1,0 +1,316 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "72", Arial, sans-serif;
+  background-color: #f3f4f5; /* SAPUI5 background */
+  color: #32363a; /* SAPUI5 text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #0a6ed1; /* SAPUI5 blue */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Launchpad Container */
+.launchpad-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Tiles */
+.tile {
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tile h2 {
+  color: #0a6ed1;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tile p {
+  color: #6a6d70;
+  font-size: 1rem;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #0a6ed1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* Launchpad Container */
+.launchpad-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Tiles */
+.tile {
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tile h2 {
+  color: #0a6ed1;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tile p {
+  color: #6a6d70;
+  font-size: 1rem;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "72", Arial, sans-serif; /* SAPUI5 default font */
+  background-color: #f3f4f5; /* SAPUI5 background */
+  color: #32363a; /* SAPUI5 text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #0a6ed1; /* SAPUI5 blue */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Material Input Section */
+.material-input-section {
+  padding: 2rem;
+}
+
+.material-input-section h2 {
+  color: #0a6ed1;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Table Layout */
+.material-input-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table-header, .table-row {
+  display: flex;
+  align-items: center;
+}
+
+.table-header {
+  background-color: #f3f4f5;
+  font-weight: bold;
+  color: #32363a;
+  text-align: left;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d8d8d8;
+  font-size: 1rem;
+}
+
+.table-row:nth-child(odd) {
+  background-color: white;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Inputs and Labels */
+.material-input, .numeric-input, .text-input {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.material-input:focus, .numeric-input:focus, .text-input:focus {
+  border-color: #0a6ed1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.description-label, .numeric-label, .text-label {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #6a6d70; /* SAPUI5 secondary text */
+}
+
+/* Footer */
+.app-footer {
+  background-color: #0a6ed1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Button Container */
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Action Buttons */
+.action-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #0a6ed1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-button:hover {
+  background-color: #085ab5;
+  transform: scale(1.05);
+}
+
+.action-button:active {
+  transform: scale(1);
+}
+
+
+/* Adjust styles for radio buttons */
+.table-cell input[type="radio"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2); /* Slightly enlarge radio buttons for better visibility */
+}
+
+
+/* Tab Container */
+.tab-container {
+  display: flex;
+  background-color: #f3f4f5;
+  border-bottom: 2px solid #d8d8d8;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #6a6d70;
+  background-color: #f3f4f5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: white;
+  color: #0a6ed1;
+  border-bottom: 2px solid #0a6ed1;
+}
+
+.tab-button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  padding: 2rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Launchpad Container */
+.launchpad-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tiles */
+.tile {
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Requisitions Tracking</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pr-tracking.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Purchase Requisitions Tracking</h1>
+  </header>
+  <main class="content">
+    <section class="pr-table-section">
+      <h2>Purchase Requisitions</h2>
+      <table id="pr-table">
+        <thead>
+          <tr>
+            <th class="line-number-column">Line #</th>
+            <th class="pr-number-column">PR Number</th>
+            <th class="status-column">PR - PO Status</th>
+            <th class="pct-column">PCT (days)</th>
+            <th class="detail-column">Detail</th>
+            <th class="note-column">Note</th>
+            <th class="email-column">Email</th>
+            <th class="delete-column">Delete Row</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be dynamically loaded here -->
+        </tbody>
+      </table>
+      <div class="button-container">
+        <button class="action-button" id="add-row">Add Row</button>
+        <button class="action-button" id="save-data">Save</button>
+      </div>
+    </section>
+  </main>
+  <footer class="app-footer">
+    <p>&copy; 2025 Purchase Requisitions Tracking System</p>
+  </footer>
+  <script src="js/pr-tracking.js"></script>
+</body>
+</html>
